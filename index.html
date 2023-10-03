@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<style type="text/css">
+		.azul{background-color: blue; color: white;}
+		.verde{background-color: green; color: white;}
+		.tijolo{background-color: tomato; color: white;}
+	</style>
+
+	<title></title>
+</head>
+<body>
+
+	<h2>Responsividade de elementos</h2>
+	<div class="container text-center">
+		<div class="row">
+			<div class="col-lg-4 col-md-6 col-sm-12 azul">Coluna 1</div>
+			<div class="col-lg-4 col-md-6 col-sm-12 verde">Coluna 2</div>
+			<div class="col-lg-4 col-md-6 col-sm-12 tijolo">Coluna 3</div>
+		</div>
+	</div>
+
+	<h2>Menu Responsivo</h2>
+	<div id="menu" class="container">
+		<nav>
+			<ul class="row">
+				<li class="col-lg-2 col-md-4 col-sm-12">Home</li>
+				<li class="col-lg-2 col-md-4 col-sm-12">Empresa</li>
+				<li class="col-lg-2 col-md-4 col-sm-12">Sobre Nós</li>
+				<li class="col-lg-2 col-md-4 col-sm-12">Produtos</li>
+				<li class="col-lg-2 col-md-4 col-sm-12">Contatos</li>
+				<li class="col-lg-2 col-md-4 col-sm-12">Login</li>
+			</ul>
+		</nav>
+	</div>
+	<h2>Formulário de Registo</h2>
+	<div id="form_registo" class="container">
+		<form id="form_registar" method="POST" action="php/validaDadosRegisto.php">
+			<!-- nome -->
+			<div class="row">
+				<div class="col-md-6 col-sm-12">
+					<label for="nome" class="form-label">Nome</label>
+    				<input type="text" class="form-control" id="nome" name="nome" placeholder="Insira o seu nome">
+				</div>
+				<!-- apelido -->
+				<div class="col-md-6 col-sm-12">
+					<label for="apelido" class="form-label">Apelido</label>
+    				<input type="text" class="form-control" id="apelido" placeholder="Insira o seu apelido" name="apelido">
+				</div>
+			</div>
+
+			<!-- morada -->
+
+			<div class="row">
+				<div class="col">
+					<label for="morada1" class="form-label">Morada 1</label>
+    				<input type="text" class="form-control" id="morada1" placeholder="Rua da escola nº 27">
+				</div>
+			</div>
+
+			<!-- morada 2-->
+			<div class="row">
+				<div class="col">
+					<label for="morada2" class="form-label">Morada 2</label>
+    				<input type="text" class="form-control" id="morada2" placeholder="Apartado 202, Mem Martins, Sintra">
+				</div>
+			</div>
+			<!-- localidade -->
+			<div class="row">
+				<div class="col-md-4 col-sm-12">
+					<label for="localidade" class="form-label">Localidade</label>
+    				<input type="text" class="form-control" id="localidade" placeholder="Insira a sua localidade">
+				</div>
+				<div class="col-md-4 col-sm-12">
+					<label for="distrito" class="form-label">Distrito</label>
+    				<input type="text" class="form-control" id="distrito" placeholder="Insira o seu distrito">
+				</div>
+				<div class="col-md-4 col-sm-12">
+					<label for="cod_post" class="form-label">Código Postal</label>
+    				<input type="text" class="form-control" id="cod_post" placeholder="4569-321">
+				</div>
+			</div>
+			<!-- email -->
+			<div class="row">
+				<div class="col">
+					<label for="email" class="form-label">Email</label>
+    				<input type="email" class="form-control" id="email" placeholder="Insira uma conta de email válida">
+				</div>
+			</div>
+			<!-- Password e Reescreva Password -->
+			<div class="row">
+				<div class="col-md-6 col-sm-12">
+					<label for="pass" class="form-label">Password</label>
+    				<input type="password" class="form-control" id="pass" placeholder="Insira uma password">
+				</div>
+				<div class="col-md-6 col-sm-12">
+					<label for="repass" class="form-label">Reescreva Password</label>
+    				<input type="password" class="form-control" id="repass" placeholder="Reescreva a password">
+				</div>
+			</div>
+
+			<div class="row" >
+				<div class="" style="display: flex; justify-content: center;">
+					<button type="submit" class="btn btn-success" style="margin: 10px;">Registar</button>
+					<button type="reset" class="btn btn-danger" style="margin: 10px;">Limpar Formulário</button>
+				</div>
+				
+			</div>
+		</form>
+	</div>
+	
+
+
+</body>
+</html>
